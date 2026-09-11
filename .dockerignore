@@ -1,0 +1,7 @@
+backend/satsa.db
+backend/satsa_seed_bench.db
+backend/tests/__pycache__
+**/__pycache__
+frontend/node_modules
+frontend/dist
+.git

@@ -1,0 +1,9 @@
+services:
+  satsa:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # point at PostgreSQL in production; demo falls back to bundled SQLite
+      DATABASE_URL: ${DATABASE_URL:-sqlite:///satsa.db}
+    restart: unless-stopped
